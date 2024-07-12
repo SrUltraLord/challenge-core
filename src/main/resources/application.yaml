@@ -1,0 +1,21 @@
+server:
+  error.include-stacktrace: "never"
+  port: 8081
+
+spring:
+  output.ansi.enabled: "ALWAYS"
+  application.name: "core"
+
+  redis:
+    host: "localhost"
+    port: 6379
+
+  datasource:
+    # Friendly reminder: Never share sensitive information in config files!
+    url: "jdbc:postgresql://localhost:5432/core"
+    username: "postgres"
+    password: "Secret123"
+    driver-class-name: "org.postgresql.Driver"
+
+  jpa:
+    hibernate.dll-auto: "update"
